@@ -1,5 +1,6 @@
 [PLANS]
 
+- 2026-07-01T20:10:37Z [USER] Connect the uploaded menu PDF to all customer-facing menu links across the website.
 - 2026-07-01T14:52:07-04:00 [USER] Replace the custom online-reservation fields with the supplied Google Form embed.
 - 2026-07-01T14:39:37-04:00 [USER] Undo all logo-background changes and restore the original white background.
 - 2026-07-01T14:38:50-04:00 [USER] Supersede the transparent-logo decision and use a black logo background.
@@ -11,6 +12,7 @@
 
 [DECISIONS]
 
+- 2026-07-01T20:10:37Z [CODE] Open `assets/pdfs/menu.pdf` in a new tab from navigation, hero, service cards, menu buttons, and footer links; retain the mobile menu toggler behavior.
 - 2026-07-01T14:52:07-04:00 [CODE] Embed the supplied Google Form in the existing left reservation panel while retaining the restaurant contact panel.
 - 2026-07-01T14:39:37-04:00 [CODE] Supersedes both prior background decisions: restore the SVG background fill to its original `#FFFFFF` value.
 - 2026-07-01T14:38:50-04:00 [CODE] Supersedes the 2026-07-01T14:37:33-04:00 transparency decision: set the SVG's full-canvas background path to black.
@@ -20,6 +22,7 @@
 
 [PROGRESS]
 
+- 2026-07-01T20:10:37Z [CODE] Replaced all menu-related placeholder and in-page links in `index.html` with the uploaded PDF path and added safe new-tab attributes.
 - 2026-07-01T14:52:07-04:00 [CODE] Replaced the inactive reservation form with an accessible, lazy-loaded Google Form iframe, added responsive sizing styles, and synchronized `index.txt`.
 - 2026-07-01T14:39:37-04:00 [CODE] Restored the logo background path from `#000000` to its original `#FFFFFF`.
 - 2026-07-01T14:38:50-04:00 [CODE] Changed the logo background path from transparent to `#000000`.
@@ -36,6 +39,7 @@
 
 [OUTCOMES]
 
+- 2026-07-01T20:10:37Z [CODE] All visible menu entry points now open the uploaded PDF; verified the PDF signature, link coverage, and clean diff formatting.
 - 2026-07-01T14:52:07-04:00 [CODE] Reservations can now be submitted through the supplied embedded Google Form; the existing contact details remain visible.
 - 2026-07-01T14:39:37-04:00 [CODE] Logo background is restored to its original white appearance.
 - 2026-07-01T14:38:50-04:00 [CODE] Logo now renders with the requested black background.
