@@ -8,6 +8,7 @@ This is a Restaurant html template made by mississauga-sankalp-website
 
 <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
 1521 Trinity Dr Unit 6&7, Mississauga, ON L5T 1P6
+Google Maps: https://maps.app.goo.gl/LhaArZHDfQb12hMs5
 
 <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 Daily : 8.00 am to 10.00 pm
@@ -37,6 +38,7 @@ Visit Us
 
 1521 Trinity Dr Unit 6&7,
 Mississauga, ON L5T 1P6
+Google Maps: https://maps.app.goo.gl/LhaArZHDfQb12hMs5
 
 Open: 9.30 am - 2.30pm
 
@@ -223,6 +225,7 @@ Location
 
 1521 Trinity Dr Unit 6&7,
 Mississauga, ON L5T 1P6
+Google Maps: https://maps.app.goo.gl/LhaArZHDfQb12hMs5
 
 Lunch Time
 
@@ -282,6 +285,7 @@ View Our Blog
 alt = grilli home
 
 1521 Trinity Dr Unit 6&7, Mississauga, ON L5T 1P6
+Google Maps: https://maps.app.goo.gl/LhaArZHDfQb12hMs5
 
 mississaugasankalp@gmail.com
 
