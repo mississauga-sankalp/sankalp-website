@@ -1,5 +1,6 @@
 [PLANS]
 
+- 2026-07-01T18:47:56-04:00 [USER] Update the embedded Google Form to the supplied 640x1182 embed dimensions while retaining responsive behavior.
 - 2026-07-01T20:40:00Z [USER] Remove the visible rectangular boundary from the transparent website logo.
 - 2026-07-01T18:41:41-04:00 [USER] Hide the floating hero booking tile and the rotating Since 1950 About badge by commenting out their markup.
 - 2026-07-01T18:34:00-04:00 [USER] Fix the footer Contact link.
@@ -33,6 +34,7 @@
 
 [PROGRESS]
 
+- 2026-07-01T18:47:56-04:00 [CODE] Added the supplied intrinsic iframe dimensions and synchronized the responsive CSS height to 1182px; CSS continues to override the width to 100%.
 - 2026-07-01T20:40:00Z [CODE] Rebuilt `assets/images/logo.png` without its full-canvas glow/haze and updated all three HTML logo dimensions.
 - 2026-07-01T18:41:41-04:00 [CODE] Commented out the hero Book A Table tile and the About section badge without deleting their markup or assets.
 - 2026-07-01T18:34:00-04:00 [CODE] Pointed the footer Contact link to the existing `#contact` section.
@@ -58,6 +60,7 @@
 
 [OUTCOMES]
 
+- 2026-07-01T18:47:56-04:00 [CODE] The reservation form now uses the latest supplied height and remains fluid across mobile, tablet, and desktop widths.
 - 2026-07-01T20:40:00Z [CODE] Logo now composites cleanly on the site's dark background with transparent edge pixels and no rectangular boundary; verified via an opaque dark-background composite and PNG alpha inspection.
 - 2026-07-01T18:41:41-04:00 [CODE] The two pictured decorative overlays are no longer rendered and can be restored by removing the surrounding HTML comments.
 - 2026-07-01T18:34:00-04:00 [CODE] Footer Contact now smoothly scrolls to the Contact Us section.
