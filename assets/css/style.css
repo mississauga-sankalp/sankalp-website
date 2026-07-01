@@ -1191,6 +1191,16 @@ body.nav-active { overflow: hidden; }
 .form-left,
 .form-right { padding: 40px 20px 30px; }
 
+.google-form-wrapper { padding: 0; }
+
+.google-form {
+  display: block;
+  width: 100%;
+  height: 1165px;
+  border: 0;
+  background-color: var(--white);
+}
+
 .input-field[type="date"] {
   text-transform: uppercase;
   padding-inline-end: 10px;
@@ -2053,6 +2063,8 @@ textarea.input-field {
 
   .form-left,
   .form-right { padding: 75px 60px; }
+
+  .google-form-wrapper { padding: 0; }
 
 
 

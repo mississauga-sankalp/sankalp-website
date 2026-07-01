@@ -1,4 +1,4 @@
-Grilli - Amazing & Delicious Food
+Sankalp Mississauga
 
 This is a Restaurant html template made by mississauga-sankalp-website
 
@@ -210,36 +210,8 @@ Sam Jhonson
 
 #---------- RESERVATION ----------#
 
-Online Reservation
-
-Booking request
-(289) 562-0580
-or fill out the order form
-
-placeholder = Your Name
-placeholder = Phone Number
-
-<ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-1 Person
-2 Person
-3 Person
-4 Person
-5 Person
-6 Person
-7 Person
-
-<ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-
-<ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-<ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-08 : 00 am
-<ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-
-placeholder = Message
-
-Book A Table
+Google Form reservation:
+https://docs.google.com/forms/d/e/1FAIpQLSd59v7-f2c2xXVYOtpTQYEbRjjt6QLPXLcyERN-wO-jv_sY3w/viewform?embedded=true
 
 Contact Us
 
