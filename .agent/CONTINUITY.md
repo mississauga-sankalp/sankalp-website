@@ -1,5 +1,10 @@
 [PLANS]
 
+- 2026-07-02T10:20:09-04:00 [USER] Reduce the preloader spinner because it appears too large beside the logo.
+- 2026-07-02T10:18:14-04:00 [USER] Replace the preloader's visible "Sankalp" text beneath the spinner with the existing Sankalp logo.
+- 2026-07-02T09:55:58-04:00 [USER] Add visible spacing between the Google Reviews widget and the reservation/contact section.
+- 2026-07-02T10:02:00-04:00 [USER] Fix the Google Reviews widget overlapping the reservation/contact section.
+- 2026-07-02T09:49:18-04:00 [USER] Comment out the existing testimonial and replace it with the supplied SociableKit Google Reviews embed.
 - 2026-07-01T18:47:56-04:00 [USER] Update the embedded Google Form to the supplied 640x1182 embed dimensions while retaining responsive behavior.
 - 2026-07-01T20:40:00Z [USER] Remove the visible rectangular boundary from the transparent website logo.
 - 2026-07-01T18:41:41-04:00 [USER] Hide the floating hero booking tile and the rotating Since 1950 About badge by commenting out their markup.
@@ -20,6 +25,10 @@
 
 [DECISIONS]
 
+- 2026-07-02T10:20:09-04:00 [CODE] Reduce the loader ring from 112px to 72px, its border from 3px to 2px, and its gap above the logo from 45px to 24px.
+- 2026-07-02T10:18:14-04:00 [CODE] Reuse `assets/images/logo.png` beneath the existing spinner and size it responsively from 140px to 200px wide.
+- 2026-07-02T09:55:58-04:00 [CODE] Use the site's responsive section-spacing variable as top padding on the reservation section, providing 70px by default and 100px at the desktop breakpoint.
+- 2026-07-02T10:02:00-04:00 [CODE] Remove the reservation form's legacy -270px top margin so the dynamic reviews widget and reservation form remain in normal document flow.
 - 2026-07-01T20:40:00Z [CODE] Replace the haze-contaminated PNG with clean isolated artwork on true alpha and correct its declared 3:2 display ratio to 160×107.
 - 2026-07-01T18:29:51-04:00 [CODE] Use the `#contact` fragment on the header link and identify the existing reservation/contact section as the destination.
 - 2026-07-01T18:18:06-04:00 [CODE] Reuse the existing exact Maps location URL `https://maps.app.goo.gl/LhaArZHDfQb12hMs5` for all address links and open it safely in a new tab.
@@ -34,6 +43,8 @@
 
 [PROGRESS]
 
+- 2026-07-02T10:18:14-04:00 [CODE] Replaced the preloader text element and its animated text CSS with an accessible logo image and compact responsive sizing.
+- 2026-07-02T09:49:18-04:00 [CODE] Preserved the original testimonial section inside an HTML comment and inserted Google Reviews embed 25694211 with the deferred SociableKit widget script.
 - 2026-07-01T18:47:56-04:00 [CODE] Added the supplied intrinsic iframe dimensions and synchronized the responsive CSS height to 1182px; CSS continues to override the width to 100%.
 - 2026-07-01T20:40:00Z [CODE] Rebuilt `assets/images/logo.png` without its full-canvas glow/haze and updated all three HTML logo dimensions.
 - 2026-07-01T18:41:41-04:00 [CODE] Commented out the hero Book A Table tile and the About section badge without deleting their markup or assets.
@@ -60,6 +71,11 @@
 
 [OUTCOMES]
 
+- 2026-07-02T10:20:09-04:00 [CODE] The loading spinner is now smaller and more proportionate to the Sankalp logo.
+- 2026-07-02T10:18:14-04:00 [CODE] The loading screen now shows the Sankalp logo beneath the original rotating spinner instead of spelling out "Sankalp."
+- 2026-07-02T09:55:58-04:00 [CODE] A responsive vertical gap now separates the Google Reviews widget from the Contact/reservation content; CSS diff formatting was verified.
+- 2026-07-02T10:02:00-04:00 [CODE] The reservation/contact section no longer shifts upward into the Google Reviews cards; CSS diff formatting was verified.
+- 2026-07-02T09:49:18-04:00 [CODE] The static sample testimonial no longer renders; the page now loads the supplied live Google Reviews widget, and HTML diff formatting was verified.
 - 2026-07-01T18:47:56-04:00 [CODE] The reservation form now uses the latest supplied height and remains fluid across mobile, tablet, and desktop widths.
 - 2026-07-01T20:40:00Z [CODE] Logo now composites cleanly on the site's dark background with transparent edge pixels and no rectangular boundary; verified via an opaque dark-background composite and PNG alpha inspection.
 - 2026-07-01T18:41:41-04:00 [CODE] The two pictured decorative overlays are no longer rendered and can be restored by removing the surrounding HTML comments.
