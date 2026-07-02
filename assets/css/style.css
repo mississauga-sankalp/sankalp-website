@@ -2077,7 +2077,7 @@ textarea.input-field {
    * HEADER
    */
 
-  .navbar { margin-inline: auto; }
+  .navbar { margin-inline: auto 20px; }
 
 
 

@@ -1,5 +1,6 @@
 [PLANS]
 
+- 2026-07-02T10:37:49-04:00 [USER] Keep the production header navigation right-aligned on wide desktop screens.
 - 2026-07-02T10:27:28-04:00 [USER] Reduce all website images larger than 2 MiB.
 - 2026-07-02T10:20:09-04:00 [USER] Reduce the preloader spinner because it appears too large beside the logo.
 - 2026-07-02T10:18:14-04:00 [USER] Replace the preloader's visible "Sankalp" text beneath the spinner with the existing Sankalp logo.
@@ -26,6 +27,7 @@
 
 [DECISIONS]
 
+- 2026-07-02T10:37:49-04:00 [CODE] Preserve the desktop navigation's `auto 20px` inline margins at the 1400px breakpoint instead of overriding them with symmetric auto margins.
 - 2026-07-02T10:27:28-04:00 [CODE] Replace seven oversized JPEGs with quality-80 WebP assets, sizing hero images to 1920px wide, the About banner to 1200px, and service/overlay images to 800px.
 - 2026-07-02T10:20:09-04:00 [CODE] Reduce the loader ring from 112px to 72px, its border from 3px to 2px, and its gap above the logo from 45px to 24px.
 - 2026-07-02T10:18:14-04:00 [CODE] Reuse `assets/images/logo.png` beneath the existing spinner and size it responsively from 140px to 200px wide.
@@ -74,6 +76,7 @@
 
 [OUTCOMES]
 
+- 2026-07-02T10:37:49-04:00 [CODE] The navigation remains right-aligned at production-width viewports of 1400px and above; the focused CSS diff passes `git diff --check`.
 - 2026-07-02T10:27:28-04:00 [TOOL] The seven optimized assets total 0.59 MiB instead of 34.12 MiB (98.3% reduction); no image in `assets/images` remains larger than 2 MiB, and reference/diff checks passed.
 - 2026-07-02T10:20:09-04:00 [CODE] The loading spinner is now smaller and more proportionate to the Sankalp logo.
 - 2026-07-02T10:18:14-04:00 [CODE] The loading screen now shows the Sankalp logo beneath the original rotating spinner instead of spelling out "Sankalp."
