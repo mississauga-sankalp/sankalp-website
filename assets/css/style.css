@@ -1142,6 +1142,15 @@ body.nav-active { overflow: hidden; }
   letter-spacing: var(--letterSpacing-3);
 }
 
+.reviews .section-title { margin-block-end: 40px; }
+
+.reviews .sk-ww-google-reviews,
+.reviews .sk-ww-google-reviews iframe {
+  border: 0 !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
 
 
 

@@ -202,11 +202,10 @@ View All Menu
 
 #---------- TESTIMONIALS ----------#
 
-”
-I wanted to thank you for inviting me down for that amazing dinner the other night. The food was extraordinary.
+Guest Experiences
+What Our Guests Say
 
-alt = Sam Jhonson
-Sam Jhonson
+Live Google Reviews widget
 
 
 

@@ -1,5 +1,7 @@
 [PLANS]
 
+- 2026-07-02T10:48:56-04:00 [USER] Remove the visible border around the Google Reviews block.
+- 2026-07-02T10:48:56-04:00 [USER] Add a heading above the Google Reviews widget using the styling established by other website sections.
 - 2026-07-02T10:37:49-04:00 [USER] Keep the production header navigation right-aligned on wide desktop screens.
 - 2026-07-02T10:27:28-04:00 [USER] Reduce all website images larger than 2 MiB.
 - 2026-07-02T10:20:09-04:00 [USER] Reduce the preloader spinner because it appears too large beside the logo.
@@ -27,6 +29,8 @@
 
 [DECISIONS]
 
+- 2026-07-02T10:48:56-04:00 [CODE] Remove border, outline, and shadow styling from both the SociableKit host and its generated iframe without changing review-card styling.
+- 2026-07-02T10:48:56-04:00 [CODE] Use the shared centered section-heading pattern with the gold `Guest Experiences` eyebrow and `What Our Guests Say` headline above the reviews widget.
 - 2026-07-02T10:37:49-04:00 [CODE] Preserve the desktop navigation's `auto 20px` inline margins at the 1400px breakpoint instead of overriding them with symmetric auto margins.
 - 2026-07-02T10:27:28-04:00 [CODE] Replace seven oversized JPEGs with quality-80 WebP assets, sizing hero images to 1920px wide, the About banner to 1200px, and service/overlay images to 800px.
 - 2026-07-02T10:20:09-04:00 [CODE] Reduce the loader ring from 112px to 72px, its border from 3px to 2px, and its gap above the logo from 45px to 24px.
@@ -47,6 +51,7 @@
 
 [PROGRESS]
 
+- 2026-07-02T10:48:56-04:00 [CODE] Wrapped the SociableKit embed in an accessible reviews section and synchronized the rendered heading text in `index.txt`.
 - 2026-07-02T10:27:28-04:00 [CODE] Encoded and validated seven WebP replacements, updated preloads and image sources in `index.html`, and removed the superseded JPEGs.
 - 2026-07-02T10:18:14-04:00 [CODE] Replaced the preloader text element and its animated text CSS with an accessible logo image and compact responsive sizing.
 - 2026-07-02T09:49:18-04:00 [CODE] Preserved the original testimonial section inside an HTML comment and inserted Google Reviews embed 25694211 with the deferred SociableKit widget script.
@@ -76,6 +81,8 @@
 
 [OUTCOMES]
 
+- 2026-07-02T10:48:56-04:00 [CODE] The Google Reviews embed no longer displays a surrounding block border from host-page or iframe styling.
+- 2026-07-02T10:48:56-04:00 [CODE] Google Reviews now has a responsive, brand-consistent heading that reuses the site's existing gold separator and headline typography.
 - 2026-07-02T10:37:49-04:00 [CODE] The navigation remains right-aligned at production-width viewports of 1400px and above; the focused CSS diff passes `git diff --check`.
 - 2026-07-02T10:27:28-04:00 [TOOL] The seven optimized assets total 0.59 MiB instead of 34.12 MiB (98.3% reduction); no image in `assets/images` remains larger than 2 MiB, and reference/diff checks passed.
 - 2026-07-02T10:20:09-04:00 [CODE] The loading spinner is now smaller and more proportionate to the Sankalp logo.
