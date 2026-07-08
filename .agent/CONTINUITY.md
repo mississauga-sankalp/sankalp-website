@@ -1,5 +1,8 @@
 [PLANS]
 
+- 2026-07-08T18:14:00-04:00 [USER] Add Online Ordering links to the header and footer that navigate to the ordering section.
+- 2026-07-08T18:04:46-04:00 [USER] Connect the Uber Eats, Skip, and Pickup ordering badges to the supplied service URLs.
+- 2026-07-08T17:41:50-04:00 [USER] Add a theme-matched Online Ordering section after What Our Guests Say with Uber Eats, Skip The Dishes, and Pickup Order hover cards.
 - 2026-07-08T14:59:14-04:00 [USER] Hide the visible SociableKit branding text in the Google Reviews widget using the supplied CSS selectors.
 - 2026-07-08T14:49:12-04:00 [USER] Refine store hours display to grouped wording: Mon-Thu 12 PM - 10 PM; Fri-Sat 12 PM - 12 AM; Sun 12 PM - 10 PM.
 - 2026-07-08T14:46:17-04:00 [USER] Update customer-facing store hours to match the supplied screenshot: Sunday-Thursday 12-10 p.m.; Friday-Saturday 12 p.m.-12 a.m.
@@ -32,6 +35,8 @@
 
 [DECISIONS]
 
+- 2026-07-08T17:44:46-04:00 [CODE] Supersede the large ordering-card presentation with compact 210×64px brand-style badges, stacked on mobile and centered in one row from 768px.
+- 2026-07-08T17:41:50-04:00 [CODE] Use Uber black, Skip orange, and the existing Sankalp gold as the three hover colors; keep the cards non-linking until ordering URLs are supplied.
 - 2026-07-08T14:59:14-04:00 [CODE] Add the supplied SociableKit branding hide rule in the document head so it loads before the deferred reviews widget script.
 - 2026-07-08T14:49:12-04:00 [CODE] Supersede the expanded daily store-hours list with the grouped Mon-Thu/Fri-Sat/Sun format requested by the user.
 - 2026-07-08T14:46:17-04:00 [CODE] Replace split Lunch/Dinner hours with a single Store Hours list in the contact panel, and use a compact Sun-Thu/Fri-Sat summary in the mobile drawer.
@@ -57,6 +62,7 @@
 
 [PROGRESS]
 
+- 2026-07-08T17:41:50-04:00 [CODE] Added the responsive Online Ordering markup to `index.html`, mirrored its text in `index.txt`, and added mobile-first three-card hover styling in `assets/css/style.css`.
 - 2026-07-08T14:59:14-04:00 [CODE] Inserted the `.sk_branding`, `.tutorial_link`, and SociableKit backlink hide CSS in `index.html` before `</head>`.
 - 2026-07-08T14:49:12-04:00 [CODE] Updated `index.html` and `index.txt` from daily rows to grouped store-hours rows.
 - 2026-07-08T14:46:17-04:00 [CODE] Updated `index.html` and synchronized `index.txt` with the new store hours.
@@ -90,6 +96,10 @@
 
 [OUTCOMES]
 
+- 2026-07-08T18:14:00-04:00 [TOOL] Header and footer Online Ordering links now target the unique `#online-ordering` section anchor; mobile in-page navigation also closes the drawer. Anchor coverage, JavaScript syntax, and focused diff checks passed.
+- 2026-07-08T18:04:46-04:00 [TOOL] All three ordering badges now open their supplied destinations safely in new tabs; URL coverage and the mirrored `index.txt` diff passed validation.
+- 2026-07-08T17:44:46-04:00 [TOOL] Ordering options resized to compact responsive badges matching the supplied reference; CSS brace validation and focused diff checks passed.
+- 2026-07-08T17:41:50-04:00 [TOOL] Online Ordering section implemented; CSS brace validation and focused diff checks passed. Full `git diff --check` remains blocked by pre-existing trailing whitespace at `index.html:165`.
 - 2026-07-08T14:59:14-04:00 [TOOL] SociableKit branding hide CSS added to `index.html`; `git diff --check` passed.
 - 2026-07-08T14:49:12-04:00 [TOOL] Grouped store-hours refinement implemented; stale expanded-hours search found no old wording in `index.html` or `index.txt`, and `git diff --check` passed.
 - 2026-07-08T14:46:17-04:00 [TOOL] Store-hour update implemented; stale-hours search found no old hours in `index.html` or `index.txt`, and `git diff --check` passed.

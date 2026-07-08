@@ -1156,6 +1156,87 @@ body.nav-active { overflow: hidden; }
 
 
 /*-----------------------------------*\
+  #ONLINE ORDERING
+\*-----------------------------------*/
+
+.online-ordering { padding-block-start: 0; }
+
+.online-ordering .section-title { margin-block-end: 40px; }
+
+.ordering-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.ordering-card {
+  --ordering-hover-color: var(--gold-crayola);
+
+  width: min(210px, 100%);
+  min-height: 64px;
+  display: grid;
+  place-items: center;
+  padding: 16px 20px;
+  background-color: var(--smoky-black-2);
+  border: 1px solid var(--white-alpha-20);
+  box-shadow: var(--shadow-1);
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  transition: border-color var(--transition-2), transform var(--transition-2);
+}
+
+.ordering-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--ordering-hover-color);
+  transform: translateY(101%);
+  transition: transform var(--transition-2);
+  z-index: -1;
+}
+
+.ordering-card-uber { --ordering-hover-color: #06c167; }
+
+.ordering-card-skip { --ordering-hover-color: hsl(30, 100%, 50%); }
+
+.ordering-card-pickup { --ordering-hover-color: #c62828; }
+
+.ordering-name {
+  color: var(--white);
+  font-family: var(--fontFamily-dm_sans);
+  font-size: 1.6rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--letterSpacing-2);
+  text-align: center;
+  text-transform: uppercase;
+  transition: color var(--transition-2);
+}
+
+.ordering-card:hover,
+.ordering-card:focus-within {
+  border-color: var(--ordering-hover-color);
+  transform: translateY(-6px);
+}
+
+.ordering-card:hover::before,
+.ordering-card:focus-within::before {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ordering-card,
+  .ordering-card::before {
+    transition-duration: 0.01ms;
+  }
+}
+
+
+
+
+
+/*-----------------------------------*\
   #RESERVATION
 \*-----------------------------------*/
 
@@ -1652,6 +1733,11 @@ textarea.input-field {
    */
 
   .grid-list { grid-template-columns: 1fr 1fr; }
+
+  .ordering-list {
+    flex-direction: row;
+    justify-content: center;
+  }
 
   :is(.service, .event) .container { max-width: 820px; }
 

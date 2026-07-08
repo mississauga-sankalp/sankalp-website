@@ -33,6 +33,7 @@ aria-label = close menu
 Home
 Menus
 About Us
+Online Ordering
 Our Chefs
 Contact
 
@@ -211,6 +212,17 @@ Live Google Reviews widget
 
 
 
+#---------- ONLINE ORDERING ----------#
+
+Order Your Favorites
+Online Ordering
+
+Uber Eats: https://www.ubereats.com/store-browse-uuid/a6d99c2d-614c-567a-b8a8-2862eaaea759?diningMode=DELIVERY
+Skip: https://www.skipthedishes.com/sankalp-the-taste-of-india
+Pickup: https://sankalp-the-taste-of-india.square.site/
+
+
+
 #---------- RESERVATION ----------#
 
 Google Form reservation:
@@ -303,6 +315,7 @@ Subscribe
 Home
 Menus
 About Us
+Online Ordering
 Our Chefs
 Contact
 
