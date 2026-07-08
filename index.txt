@@ -11,7 +11,9 @@ This is a Restaurant html template made by mississauga-sankalp-website
 Google Maps: https://maps.app.goo.gl/LhaArZHDfQb12hMs5
 
 <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-Daily : 8.00 am to 10.00 pm
+Mon-Thu: 12 PM - 10 PM
+Fri-Sat: 12 PM - 12 AM
+Sun: 12 PM - 10 PM
 
 <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
 (289) 562-0580
@@ -40,7 +42,7 @@ Visit Us
 Mississauga, ON L5T 1P6
 Google Maps: https://maps.app.goo.gl/LhaArZHDfQb12hMs5
 
-Open: 9.30 am - 2.30pm
+Open: Mon-Thu 12 PM - 10 PM; Fri-Sat 12 PM - 12 AM; Sun 12 PM - 10 PM
 
 mississaugasankalp@gmail.com
 
@@ -226,15 +228,11 @@ Location
 Mississauga, ON L5T 1P6
 Google Maps: https://maps.app.goo.gl/LhaArZHDfQb12hMs5
 
-Lunch Time
+Store Hours
 
-Monday to Sunday
-11.00 am - 2.30pm
-
-Dinner Time
-
-Monday to Sunday
-05.00 pm - 10.00pm
+Mon-Thu: 12 PM - 10 PM
+Fri-Sat: 12 PM - 12 AM
+Sun: 12 PM - 10 PM
 
 
 
@@ -406,13 +404,10 @@ Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem I
 
 Andrew Joe - Founder
 
-Lunch Time
-Monday to Sunday
-11.00 am - 2.30pm
-
-Dinner Time
-Monday to Sunday
-5.30 pm - 11.30 pm
+Store Hours
+Mon-Thu: 12 PM - 10 PM
+Fri-Sat: 12 PM - 12 AM
+Sun: 12 PM - 10 PM
 
 Contact Us
 1521 Trinity Dr Unit 6&7, Mississauga, ON L5T 1P6

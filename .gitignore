@@ -1,0 +1,29 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# AI and coding-agent files
+.agent/
+.agents/
+.codex/
+.claude/
+.cursor/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+tmp/
+temp/

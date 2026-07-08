@@ -1,5 +1,8 @@
 [PLANS]
 
+- 2026-07-08T14:59:14-04:00 [USER] Hide the visible SociableKit branding text in the Google Reviews widget using the supplied CSS selectors.
+- 2026-07-08T14:49:12-04:00 [USER] Refine store hours display to grouped wording: Mon-Thu 12 PM - 10 PM; Fri-Sat 12 PM - 12 AM; Sun 12 PM - 10 PM.
+- 2026-07-08T14:46:17-04:00 [USER] Update customer-facing store hours to match the supplied screenshot: Sunday-Thursday 12-10 p.m.; Friday-Saturday 12 p.m.-12 a.m.
 - 2026-07-02T10:48:56-04:00 [USER] Remove the visible border around the Google Reviews block.
 - 2026-07-02T10:48:56-04:00 [USER] Add a heading above the Google Reviews widget using the styling established by other website sections.
 - 2026-07-02T10:37:49-04:00 [USER] Keep the production header navigation right-aligned on wide desktop screens.
@@ -29,6 +32,9 @@
 
 [DECISIONS]
 
+- 2026-07-08T14:59:14-04:00 [CODE] Add the supplied SociableKit branding hide rule in the document head so it loads before the deferred reviews widget script.
+- 2026-07-08T14:49:12-04:00 [CODE] Supersede the expanded daily store-hours list with the grouped Mon-Thu/Fri-Sat/Sun format requested by the user.
+- 2026-07-08T14:46:17-04:00 [CODE] Replace split Lunch/Dinner hours with a single Store Hours list in the contact panel, and use a compact Sun-Thu/Fri-Sat summary in the mobile drawer.
 - 2026-07-02T10:48:56-04:00 [CODE] Remove border, outline, and shadow styling from both the SociableKit host and its generated iframe without changing review-card styling.
 - 2026-07-02T10:48:56-04:00 [CODE] Use the shared centered section-heading pattern with the gold `Guest Experiences` eyebrow and `What Our Guests Say` headline above the reviews widget.
 - 2026-07-02T10:37:49-04:00 [CODE] Preserve the desktop navigation's `auto 20px` inline margins at the 1400px breakpoint instead of overriding them with symmetric auto margins.
@@ -51,6 +57,9 @@
 
 [PROGRESS]
 
+- 2026-07-08T14:59:14-04:00 [CODE] Inserted the `.sk_branding`, `.tutorial_link`, and SociableKit backlink hide CSS in `index.html` before `</head>`.
+- 2026-07-08T14:49:12-04:00 [CODE] Updated `index.html` and `index.txt` from daily rows to grouped store-hours rows.
+- 2026-07-08T14:46:17-04:00 [CODE] Updated `index.html` and synchronized `index.txt` with the new store hours.
 - 2026-07-02T10:48:56-04:00 [CODE] Wrapped the SociableKit embed in an accessible reviews section and synchronized the rendered heading text in `index.txt`.
 - 2026-07-02T10:27:28-04:00 [CODE] Encoded and validated seven WebP replacements, updated preloads and image sources in `index.html`, and removed the superseded JPEGs.
 - 2026-07-02T10:18:14-04:00 [CODE] Replaced the preloader text element and its animated text CSS with an accessible logo image and compact responsive sizing.
@@ -81,6 +90,9 @@
 
 [OUTCOMES]
 
+- 2026-07-08T14:59:14-04:00 [TOOL] SociableKit branding hide CSS added to `index.html`; `git diff --check` passed.
+- 2026-07-08T14:49:12-04:00 [TOOL] Grouped store-hours refinement implemented; stale expanded-hours search found no old wording in `index.html` or `index.txt`, and `git diff --check` passed.
+- 2026-07-08T14:46:17-04:00 [TOOL] Store-hour update implemented; stale-hours search found no old hours in `index.html` or `index.txt`, and `git diff --check` passed.
 - 2026-07-02T10:48:56-04:00 [CODE] The Google Reviews embed no longer displays a surrounding block border from host-page or iframe styling.
 - 2026-07-02T10:48:56-04:00 [CODE] Google Reviews now has a responsive, brand-consistent heading that reuses the site's existing gold separator and headline typography.
 - 2026-07-02T10:37:49-04:00 [CODE] The navigation remains right-aligned at production-width viewports of 1400px and above; the focused CSS diff passes `git diff --check`.
