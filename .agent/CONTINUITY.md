@@ -62,6 +62,7 @@
 
 [PROGRESS]
 
+- 2026-07-08T23:33:33-04:00 [TOOL] Converted the supplied 7008×4672 `about-banner.jpg` into the site-referenced `assets/images/about-banner.webp` at 1200×800 and removed the superseded JPEG source.
 - 2026-07-08T17:41:50-04:00 [CODE] Added the responsive Online Ordering markup to `index.html`, mirrored its text in `index.txt`, and added mobile-first three-card hover styling in `assets/css/style.css`.
 - 2026-07-08T14:59:14-04:00 [CODE] Inserted the `.sk_branding`, `.tutorial_link`, and SociableKit backlink hide CSS in `index.html` before `</head>`.
 - 2026-07-08T14:49:12-04:00 [CODE] Updated `index.html` and `index.txt` from daily rows to grouped store-hours rows.
@@ -96,6 +97,7 @@
 
 [OUTCOMES]
 
+- 2026-07-08T23:33:33-04:00 [TOOL] About banner conversion completed: valid 1200×800 lossy WebP, 95 KiB, with no WebP validation errors; the existing HTML reference already targets the converted file.
 - 2026-07-08T18:14:00-04:00 [TOOL] Header and footer Online Ordering links now target the unique `#online-ordering` section anchor; mobile in-page navigation also closes the drawer. Anchor coverage, JavaScript syntax, and focused diff checks passed.
 - 2026-07-08T18:04:46-04:00 [TOOL] All three ordering badges now open their supplied destinations safely in new tabs; URL coverage and the mirrored `index.txt` diff passed validation.
 - 2026-07-08T17:44:46-04:00 [TOOL] Ordering options resized to compact responsive badges matching the supplied reference; CSS brace validation and focused diff checks passed.
