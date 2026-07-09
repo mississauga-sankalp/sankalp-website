@@ -25,7 +25,7 @@ mississaugasankalp@gmail.com
 
 #---------- HEADER ----------#
 
-alt = Grilli - Home
+alt = Sankalp Mississauga
 
 aria-label = close menu
 <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -291,7 +291,7 @@ View Our Blog
 
 #---------- FOOTER ----------#
 
-alt = grilli home
+alt = Sankalp Mississauga
 
 1521 Trinity Dr Unit 6&7, Mississauga, ON L5T 1P6
 Google Maps: https://maps.app.goo.gl/LhaArZHDfQb12hMs5
@@ -325,7 +325,7 @@ Twitter
 Youtube
 Google Map
 
-&copy; 2022 Grilli. All Rights Reserved | Crafted by
+&copy; 2022 Sankalp Mississauga. All Rights Reserved | Crafted by
 
 https://github.com/mississauga-sankalp/sankalp-website
 

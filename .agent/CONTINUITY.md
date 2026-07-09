@@ -68,6 +68,8 @@
 
 [PROGRESS]
 
+- 2026-07-09T14:38:27-04:00 [CODE] Replaced the remaining `Grilli`/`grilli` strings in `index.txt` footer/header alt and copyright text with Sankalp Mississauga wording.
+- 2026-07-09T14:31:32-04:00 [CODE] Generated `favicon.png` from `assets/images/logo.png`, updated the page favicon link to use it, and synchronized the header alt label in `index.txt`.
 - 2026-07-09T00:24:16-04:00 [CODE] Synchronized the iframe `height` attribute and `.google-form` CSS height at 1280px and added `scrolling="no"`.
 - 2026-07-09T00:10:46-04:00 [CODE] Enforced `width: 351px` and `height: auto` on `.special-dish .shape-2`.
 - 2026-07-08T23:59:59-04:00 [CODE] Updated the `shape-9.png` width declaration from 351px to 323px while retaining its 462px height, matching the 1072×1533 source ratio.
@@ -106,6 +108,8 @@
 
 [OUTCOMES]
 
+- 2026-07-09T14:38:27-04:00 [TOOL] `rg --hidden -n -i "grilli" . -g '!.git'` now returns no matches; `git diff --check -- index.txt` passed.
+- 2026-07-09T14:31:32-04:00 [TOOL] Browser/tab favicon now uses the Sankalp logo PNG; `git diff --check -- index.html index.txt favicon.png` passed.
 - 2026-07-09T00:24:16-04:00 [TOOL] The Google contact form now has enough responsive height to display its measured content without an internal scrollbar.
 - 2026-07-09T00:10:46-04:00 [TOOL] The vadapav decoration is now constrained to 351px wide by CSS while preserving the replacement image's aspect ratio.
 - 2026-07-08T23:59:59-04:00 [TOOL] The vadapav cutout now renders without horizontal distortion; source dimensions and focused diff formatting were verified.
