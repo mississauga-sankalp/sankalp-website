@@ -1,5 +1,8 @@
 [PLANS]
 
+- 2026-07-09T00:24:16-04:00 [USER] Remove the internal scrollbar from the embedded Google contact form by fixing its iframe height.
+- 2026-07-09T00:10:46-04:00 [USER] Enforce the declared 351px display width for the vadapav `shape-9.png`; its natural width was overriding the HTML dimensions.
+- 2026-07-08T23:59:59-04:00 [USER] Fix the vadapav decorative image in `assets/images/shape-9.png`.
 - 2026-07-08T18:14:00-04:00 [USER] Add Online Ordering links to the header and footer that navigate to the ordering section.
 - 2026-07-08T18:04:46-04:00 [USER] Connect the Uber Eats, Skip, and Pickup ordering badges to the supplied service URLs.
 - 2026-07-08T17:41:50-04:00 [USER] Add a theme-matched Online Ordering section after What Our Guests Say with Uber Eats, Skip The Dishes, and Pickup Order hover cards.
@@ -35,6 +38,9 @@
 
 [DECISIONS]
 
+- 2026-07-09T00:24:16-04:00 [CODE] Set the responsive Google Form iframe to 1280px high and disable iframe scrolling; live measurements were 1235px at 640px wide and 1255px at 390px wide.
+- 2026-07-09T00:10:46-04:00 [CODE] Replace `.special-dish .shape-2 { width: max-content; }` with an explicit 351px CSS width and automatic height because CSS controls the rendered size and the HTML width/height attributes alone do not override that rule.
+- 2026-07-08T23:59:59-04:00 [CODE] Preserve the replacement vadapav artwork and correct its HTML display dimensions to the source image's aspect ratio instead of stretching it into the previous decorative asset's proportions.
 - 2026-07-08T17:44:46-04:00 [CODE] Supersede the large ordering-card presentation with compact 210×64px brand-style badges, stacked on mobile and centered in one row from 768px.
 - 2026-07-08T17:41:50-04:00 [CODE] Use Uber black, Skip orange, and the existing Sankalp gold as the three hover colors; keep the cards non-linking until ordering URLs are supplied.
 - 2026-07-08T14:59:14-04:00 [CODE] Add the supplied SociableKit branding hide rule in the document head so it loads before the deferred reviews widget script.
@@ -62,6 +68,9 @@
 
 [PROGRESS]
 
+- 2026-07-09T00:24:16-04:00 [CODE] Synchronized the iframe `height` attribute and `.google-form` CSS height at 1280px and added `scrolling="no"`.
+- 2026-07-09T00:10:46-04:00 [CODE] Enforced `width: 351px` and `height: auto` on `.special-dish .shape-2`.
+- 2026-07-08T23:59:59-04:00 [CODE] Updated the `shape-9.png` width declaration from 351px to 323px while retaining its 462px height, matching the 1072×1533 source ratio.
 - 2026-07-08T23:33:33-04:00 [TOOL] Converted the supplied 7008×4672 `about-banner.jpg` into the site-referenced `assets/images/about-banner.webp` at 1200×800 and removed the superseded JPEG source.
 - 2026-07-08T17:41:50-04:00 [CODE] Added the responsive Online Ordering markup to `index.html`, mirrored its text in `index.txt`, and added mobile-first three-card hover styling in `assets/css/style.css`.
 - 2026-07-08T14:59:14-04:00 [CODE] Inserted the `.sk_branding`, `.tutorial_link`, and SociableKit backlink hide CSS in `index.html` before `</head>`.
@@ -97,6 +106,9 @@
 
 [OUTCOMES]
 
+- 2026-07-09T00:24:16-04:00 [TOOL] The Google contact form now has enough responsive height to display its measured content without an internal scrollbar.
+- 2026-07-09T00:10:46-04:00 [TOOL] The vadapav decoration is now constrained to 351px wide by CSS while preserving the replacement image's aspect ratio.
+- 2026-07-08T23:59:59-04:00 [TOOL] The vadapav cutout now renders without horizontal distortion; source dimensions and focused diff formatting were verified.
 - 2026-07-08T23:33:33-04:00 [TOOL] About banner conversion completed: valid 1200×800 lossy WebP, 95 KiB, with no WebP validation errors; the existing HTML reference already targets the converted file.
 - 2026-07-08T18:14:00-04:00 [TOOL] Header and footer Online Ordering links now target the unique `#online-ordering` section anchor; mobile in-page navigation also closes the drawer. Anchor coverage, JavaScript syntax, and focused diff checks passed.
 - 2026-07-08T18:04:46-04:00 [TOOL] All three ordering badges now open their supplied destinations safely in new tabs; URL coverage and the mirrored `index.txt` diff passed validation.
