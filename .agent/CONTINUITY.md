@@ -1,5 +1,6 @@
 [PLANS]
 
+- 2026-07-13T11:20:00-04:00 [USER] Fix the broken favicon link markup in `index.html` so the site no longer references the deleted SVG favicon.
 - 2026-07-09T00:24:16-04:00 [USER] Remove the internal scrollbar from the embedded Google contact form by fixing its iframe height.
 - 2026-07-09T00:10:46-04:00 [USER] Enforce the declared 351px display width for the vadapav `shape-9.png`; its natural width was overriding the HTML dimensions.
 - 2026-07-08T23:59:59-04:00 [USER] Fix the vadapav decorative image in `assets/images/shape-9.png`.
@@ -38,6 +39,7 @@
 
 [DECISIONS]
 
+- 2026-07-13T11:20:00-04:00 [CODE] Remove the stale `favicon.svg` reference and keep the cache-busted PNG favicon as both the standard and shortcut icon because `favicon.svg` has already been deleted from the workspace.
 - 2026-07-09T00:24:16-04:00 [CODE] Set the responsive Google Form iframe to 1280px high and disable iframe scrolling; live measurements were 1235px at 640px wide and 1255px at 390px wide.
 - 2026-07-09T00:10:46-04:00 [CODE] Replace `.special-dish .shape-2 { width: max-content; }` with an explicit 351px CSS width and automatic height because CSS controls the rendered size and the HTML width/height attributes alone do not override that rule.
 - 2026-07-08T23:59:59-04:00 [CODE] Preserve the replacement vadapav artwork and correct its HTML display dimensions to the source image's aspect ratio instead of stretching it into the previous decorative asset's proportions.
@@ -108,6 +110,7 @@
 
 [OUTCOMES]
 
+- 2026-07-13T11:20:00-04:00 [TOOL] `index.html` now points only to `favicon.png?v=2` for favicon delivery; the stale `favicon.svg` request is gone.
 - 2026-07-09T14:38:27-04:00 [TOOL] `rg --hidden -n -i "grilli" . -g '!.git'` now returns no matches; `git diff --check -- index.txt` passed.
 - 2026-07-09T14:31:32-04:00 [TOOL] Browser/tab favicon now uses the Sankalp logo PNG; `git diff --check -- index.html index.txt favicon.png` passed.
 - 2026-07-09T00:24:16-04:00 [TOOL] The Google contact form now has enough responsive height to display its measured content without an internal scrollbar.

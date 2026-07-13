@@ -1,7 +1,0 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <title>Sankalp Mississauga</title>
-  <ellipse cx="34" cy="13" rx="14" ry="8" fill="#FF8A00"/>
-  <path d="M13 27L21 17L30 21L39 15" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="miter"/>
-  <path d="M24 34L35 25L44 30L52 24" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="miter"/>
-  <path d="M38 31C35 25 28 22 21 23C13 24 8 30 8 38C8 48 16 54 27 54C36 54 44 50 48 43L38 38C35 43 31 46 26 46C20 46 16 42 16 37C16 32 20 30 25 30C30 30 34 32 38 36V31Z" fill="#E50914"/>
-</svg>
